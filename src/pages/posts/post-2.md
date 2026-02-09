@@ -1,11 +1,11 @@
 ---
 layout: ../../components/MarkdownPost.astro
-title: "The Looming Economic Catastrophe: China on the Brink of Collapse"
+title: "Normalizacion"
 author: 
-  name: "Kostya Jarvis"
-  url: "https://images.pexels.com/photos/28368876/pexels-photo-28368876/free-photo-of-a-man-in-black-sitting-on-a-red-couch.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  name: "IBM"
+  url: "https://blog.invgate.com/hubfs/normalizacion-de-base-de-datos.png"
 image:
-  url: "https://images.pexels.com/photos/7693240/pexels-photo-7693240.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  url: "https://blog.invgate.com/hubfs/normalizacion-de-base-de-datos.png"
   alt: "xx"
 tags: [""]
 pubDate: 'Oct 15, 2025'
@@ -14,13 +14,9 @@ comments: '49'
 ---
 
 
-Look around at social media, politics, or the news and you’re likely to agree with the bodybuilding champ-turned-movie star-turned-governor of California.
-
-
-Whether he was lifting weights for five hours a day or trying to hack a path through the thicket of California politics, Schwarzenegger claims he was consistently happy. What allowed him to maintain a positive outlook despite personal setbacks and tough jobs? In his book Be Useful, Schwarzenegger boils down his philosophy to just four words.
-
-
-You might think a simple mantra is too flimsy a thing to be actually meaningful in the face of real-life struggle. But according to top psychologists, the Governator actually manages to capture profound truths about human flourishing in one quick motto.
+La normalización de bases de datos es un proceso de diseño de bases de datos que organiza los datos en estructuras de tablas específicas. Ayuda a mejorar la integridad de los datos, prevenir anomalías de datos, minimizar la redundancia de datos y reforzar el rendimiento de las consultas.
+ 
+La normalización optimiza las tablas en los sistemas de gestión de bases de datos (DBMS) para cumplir con lo que se conoce como formas normales: conjuntos de reglas que rigen cómo se organizan los atributos dentro de una tabla. Estas reglas se basan en gran medida en las relaciones entre atributos (columnas), incluidas las claves utilizadas para identificar filas de forma única.
 
 
 

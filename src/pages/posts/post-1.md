@@ -1,11 +1,11 @@
 ---
 layout: ../../components/MarkdownPost.astro
-title: "Warren Buffett’s Seven Rules: An Economic Masterclass in Value Investing"
+title: "Modelado"
 author: 
-  name: "Jessica Stillman"
-  url: "https://images.pexels.com/photos/935743/pexels-photo-935743.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  name: "IBM"
+  url: "https://i.pinimg.com/1200x/8e/cc/8c/8ecc8cf4239853b59e9a52afa95d86ad.jpg"
 image:
-  url: "https://images.pexels.com/photos/313690/pexels-photo-313690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  url: "https://i.pinimg.com/1200x/8e/cc/8c/8ecc8cf4239853b59e9a52afa95d86ad.jpg"
   alt: "xx"
 tags: [""]
 pubDate: 'Feb 09, 2025'
@@ -14,14 +14,16 @@ comments: '119'
 ---
 
 
-Look around at social media, politics, or the news and you’re likely to agree with the bodybuilding champ-turned-movie star-turned-governor of California.
+El modelado de datos es el proceso de crear una representación visual de todo un sistema de información o partes de él para comunicar conexiones entre puntos de datos y estructuras.
 
-Whether he was lifting weights for five hours a day or trying to hack a path through the thicket of California politics, Schwarzenegger claims he was consistently happy. What allowed him to maintain a positive outlook despite personal setbacks and tough jobs? In his book Be Useful, Schwarzenegger boils down his philosophy to just four words.
+El objetivo del modelado de datos es ilustrar los tipos de datos utilizados y almacenados dentro del sistema, las relaciones entre estos tipos de datos, las formas en que se pueden agrupar y organizar los datos y sus formatos y atributos.
+```kotlin
 
+fun main(){
+  println("Hello World")
+}
 
-You might think a simple mantra is too flimsy a thing to be actually meaningful in the face of real-life struggle. But according to top psychologists, the Governator actually manages to capture profound truths about human flourishing in one quick motto.
-
-
+```
 
 
 
