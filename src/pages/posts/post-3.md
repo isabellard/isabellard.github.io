@@ -1,11 +1,11 @@
 ---
 layout: ../../components/MarkdownPost.astro
-title: "The Financial Alchemy of Fiat Currency: A Historical Reflection on the Modern Economy"
+title: "lenguaje de consulta estructurado (SQL)"
 author: 
-  name: "Laura Ville"
-  url: "https://images.pexels.com/photos/30890403/pexels-photo-30890403/free-photo-of-young-woman-squeezing-orange-juice-on-face.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  name: "IBM"
+  url: "https://i.pinimg.com/736x/14/20/fd/1420fdb2c1b84a55bc9a61e3050b0fa5.jpg"
 image:
-  url: "https://images.pexels.com/photos/9304917/pexels-photo-9304917.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load"
+  url: "https://i.pinimg.com/736x/14/20/fd/1420fdb2c1b84a55bc9a61e3050b0fa5.jpg"
   alt: "xx"
 tags: [""]
 pubDate: 'Mar 17, 2025'
@@ -13,14 +13,8 @@ likes: '6.3k'
 comments: '99'
 ---
 
+El lenguaje de consulta estructurado (SQL) es un lenguaje de programación estandarizado y específico de dominio que se emplea para interactuar con sistemas de gestión de bases de datos relacionales (RDBMS) como MySQL, SQL Server, IBM Db2, PostgreSQL y Oracle Database.
 
-Look around at social media, politics, or the news and you’re likely to agree with the bodybuilding champ-turned-movie star-turned-governor of California.
-
-
-
-Whether he was lifting weights for five hours a day or trying to hack a path through the thicket of California politics, Schwarzenegger claims he was consistently happy. What allowed him to maintain a positive outlook despite personal setbacks and tough jobs? In his book Be Useful, Schwarzenegger boils down his philosophy to just four words.
-
-
-You might think a simple mantra is too flimsy a thing to be actually meaningful in the face of real-life struggle. But according to top psychologists, the Governator actually manages to capture profound truths about human flourishing in one quick motto.
+Las SQL queries (también conocidas como comandos SQL o declaraciones SQL) permiten a los usuarios agregar, recuperar, actualizar, eliminar, agregar y administrar datos fácilmente en una base de datos relacional (o SQL database). En estos sistemas, los datos estructurados se ordenan en filas y columnas, que juntas forman tablas. Los datos suelen estructurarse en varias tablas relacionadas que se pueden vincular mediante claves primarias o externas.
 
 
