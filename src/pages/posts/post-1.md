@@ -17,13 +17,22 @@ comments: '119'
 El modelado de datos es el proceso de crear una representación visual de todo un sistema de información o partes de él para comunicar conexiones entre puntos de datos y estructuras.
 
 El objetivo del modelado de datos es ilustrar los tipos de datos utilizados y almacenados dentro del sistema, las relaciones entre estos tipos de datos, las formas en que se pueden agrupar y organizar los datos y sus formatos y atributos.
-```kotlin
 
-fun main(){
-  println("Hello World")
-}
+--
 
-```
+**Ejercicio de modelado entidad relación 19 de Febrero**
+--
+*Aviacion:*
+![Aviacion](/Aviacion.png)
+
+--
+*Biblioteca*
+![Biblioteca](/Biblioteca.png)
+
+--
+*Streaming*
+![lataforma](/Plataforma.png)
+
 
 
 
