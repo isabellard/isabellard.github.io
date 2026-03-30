@@ -1,6 +1,7 @@
 ---
 layout: ../../components/MarkdownPost.astro
 title: "Proyecto"
+categoria: "modelado"
 author: 
   name: "Isabella Rodriguez"
   url: "https://i.pinimg.com/736x/93/83/59/938359e19ab1532ba2b52e8e3d4820e3.jpg"

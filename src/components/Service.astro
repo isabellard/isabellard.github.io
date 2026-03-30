@@ -14,23 +14,27 @@ const stats = [
 
 const services = [
   {
-    name: `User Research`,
-    desc: `Services we’re providing that derive 99% result`,
+    name: `Aprendizaje`,
+    desc: `Github for learning how version control works`,
+    link: "https://github.com/isabellard/aprendizaje",
     icon: researchIcon,
   },
   {
-    name: `Wireframing`,
-    desc: `Services we’re providing that derive 99% result`,
+    name: `Pokemon`,
+    desc: `A Java Spring Boot project inspired by Pokemon battles`,
+    link: "https://github.com/isabellard/aprendizaje",
     icon: wireIcon,
   },
   {
-    name: `UI Designing`,
-    desc: `Services we’re providing that derive 99% result`,
+    name: `Purple Industries`,
+    desc: `Complete CRUD management for both patients and doctors`,
+    link: "https://github.com/isabellard/aprendizaje",
     icon: uiIcon,
   },
   {
-    name: `Prototyping`,
-    desc: `Services we’re providing that derive 99% result`,
+    name: `Mi portafolio`,
+    desc: `Project where you can find all the info about me and my projectst`,
+    link: "https://github.com/isabellard/aprendizaje",
     icon: protoIcon,
   },
 ];
@@ -47,9 +51,7 @@ const services = [
   <div class="max-w-4xl mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-[60%_40%] py-10 relative">
       <div class="flex items-end">
-        <h1 class="text-4xl">
-          Services we’re providing that derive 99% result
-        </h1>
+        <h1 class="text-4xl">Aqui puedes ver todos mis proyectos en github</h1>
         <svg
           class="size-20"
           viewBox="0 0 37 35"
@@ -89,7 +91,12 @@ const services = [
           services.map((item) => (
             <div class="flex flex-col gap-2 p-4 md:p-6 border-l-2 border-b-2">
               <img src={item.icon.src} width="40" alt="" />
-              <h3 class="text-xl font-medium">{item.name}</h3>
+              <h3 class="text-xl font-medium">
+                {" "}
+                <a href={item.link} target="_blank" rel="noopener noreferrer">
+                  {item.name}
+                </a>
+              </h3>
               <p>{item.desc}</p>
             </div>
           ))

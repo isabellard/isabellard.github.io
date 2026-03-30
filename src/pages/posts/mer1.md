@@ -1,26 +1,24 @@
 ---
 layout: ../../components/MarkdownPost.astro
-title: "Modelado"
+title: "Taller MER 1"
+categoria: "modelado"
 author: 
-  name: "IBM"
-  url: "https://i.pinimg.com/1200x/8e/cc/8c/8ecc8cf4239853b59e9a52afa95d86ad.jpg"
+  name: "Isabella"
+  url: "/Aviacion.png"
 image:
-  url: "https://i.pinimg.com/1200x/8e/cc/8c/8ecc8cf4239853b59e9a52afa95d86ad.jpg"
+  url: "/Aviacion.png"
   alt: "xx"
 tags: [""]
 pubDate: 'Feb 09, 2025'
 likes: '12.3k'
 comments: '119'
 ---
+Ejercicio de modelado entidad-relación 19 de Febrero
+--
+Realizado por: Luna Calderon e Isabella Rodríguez
 
-
-El modelado de datos es el proceso de crear una representación visual de todo un sistema de información o partes de él para comunicar conexiones entre puntos de datos y estructuras.
-
-El objetivo del modelado de datos es ilustrar los tipos de datos utilizados y almacenados dentro del sistema, las relaciones entre estos tipos de datos, las formas en que se pueden agrupar y organizar los datos y sus formatos y atributos.
 
 --
-
-**Ejercicio de modelado entidad-relación 19 de Febrero**
 --
 ***Aviación:***
 --
@@ -79,24 +77,4 @@ historial de búsquedas, historial de videos vistos. Etc.
 Diseñe un modelo Entidad – Relación que cumpla con el
 mínimo de esta solicitud.
 --
-![lataforma](/Plataforma.png)
-
---
-
-**Ejercicio de modelado entidad-relación extendido 24 de Febrero**
-
---
-*Transporte*
-![lataforma](/Transporte.png)
-
---
-*Proveedor*
-![lataforma](/Proveedor.png)
-
---
-*Biblioteca*
-![lataforma](/Biblioteca2.png)
-
---
-*Oficina*
-![lataforma](/Oficina.png)
+![Plataforma](/Plataforma.png)

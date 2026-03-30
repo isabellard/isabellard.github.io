@@ -5,26 +5,33 @@ import { buy } from "../sample";
 import svgUnderline from "../assets/underline.svg";
 import arrowCard from "../assets/arrow-card.svg";
 
-const portfolio = [
+const categorias = [
     {
-        name: "Modelo de entidad-relación",
-        desc: `Modelado`,
-        cover: "src/assets/Aviacion.png",
+        nombre: "Modelado",
+        url: "/modelado",
+        image: "https://i.pinimg.com/1200x/8e/cc/8c/8ecc8cf4239853b59e9a52afa95d86ad.jpg",
+        descripcion:
+            "El modelado de datos es el proceso de crear una representación ...",
     },
     {
-        name: "Portfolio design",
-        desc: `UI design - User research - webflow development`,
-        cover: `https://images.pexels.com/photos/2303781/pexels-photo-2303781.jpeg?auto=compress&cs=tinysrgb&w=1600`,
+        nombre: "Normalización",
+        url: "/normalizacion",
+        image: "https://blog.invgate.com/hubfs/normalizacion-de-base-de-datos.png",
+        descripcion:
+            "La normalización de bases de datos es un proceso de diseño de ...",
     },
     {
-        name: "Portfolio design",
-        desc: `UI design - User research - webflow development`,
-        cover: `https://images.pexels.com/photos/441963/pexels-photo-441963.jpeg?auto=compress&cs=tinysrgb&w=1600`,
+        nombre: "Lenguaje de consulta estructurado (SQL)",
+        url: "/sql",
+        image: "https://i.pinimg.com/736x/14/20/fd/1420fdb2c1b84a55bc9a61e3050b0fa5.jpg",
+        descripcion:
+            "El lenguaje de consulta estructurado (SQL) es un lenguaje de ...",
     },
     {
-        name: "Portfolio design",
-        desc: `UI design - User research - webflow development`,
-        cover: `https://images.pexels.com/photos/245240/pexels-photo-245240.jpeg?auto=compress&cs=tinysrgb&w=1600`,
+        nombre: "Proyecto",
+        url: "/proyecto",
+        image: "https://i.pinimg.com/736x/93/83/59/938359e19ab1532ba2b52e8e3d4820e3.jpg",
+        descripcion: "Proyecto final integrador...",
     },
 ];
 ---
@@ -36,21 +43,21 @@ const portfolio = [
             src={svgUnderline.src}
             alt="arrow"
             width="140"
-            class="absolute left-50 -bottom-1"
+            class="absolute left-45 -bottom-1"
         />
     </div>
 
     <div class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
         {
-            portfolio.map((item) => (
+            categorias.map((item) => (
                 <a
-                    href={buy.link}
+                    href={item.url}
                     target="_blank"
                     class="flex flex-col bg-white p-5 group relative transition-all duration-200 hover:shadow-[4px_4px_0px_rgba(0,0,0,0.3)]"
                 >
                     <div class="w-full h-[200px] overflow-hidden border-2">
                         <img
-                            src={item.cover}
+                            src={item.image}
                             alt=""
                             class="w-full h-full object-cover"
                         />
@@ -58,11 +65,11 @@ const portfolio = [
                     <div class="space-y-1 pt-4">
                         <div class="flex pr-2">
                             <h2 class="text-xl font-medium flex-1">
-                                {item.name}
+                                {item.nombre}
                             </h2>
                             <img src={arrowCard.src} alt="arrow" width="25" />
                         </div>
-                        <p class="mr-20">{item.desc}</p>
+                        <p class="mr-20">{item.descripcion}</p>
                     </div>
                     <Bars />
                 </a>

@@ -1,44 +1,96 @@
 ---
-import '../styles/global.css'
-import { Image } from 'astro:assets';
-import Layout from '../layouts/Layout.astro';
+import "../styles/global.css";
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
 
-import AppHeader from './Header.astro';
-import AppFooter from './Footer.astro';
-import CallToAction from './CallToAction.astro';
+import AppHeader from "./Header.astro";
+import AppFooter from "./Footer.astro";
+import CallToAction from "./CallToAction.astro";
 
 const styleSheet = {
-    actions: 'text-gray-500 flex items-center gap-2 hover:text-gray-700',
-}
+    actions:
+        "text-gray-500 flex items-center gap-2 hover:text-gray-700 transition-colors",
+};
 
 const { frontmatter } = Astro.props;
+
+const categoria = (frontmatter?.categoria ||
+    "evidencias") as keyof typeof rutasVolver;
+
+const rutasVolver = {
+    modelado: { url: "/modelado", texto: "Volver a Modelado" },
+    normalizacion: { url: "/normalizacion", texto: "Volver a Normalización" },
+    sql: { url: "/sql", texto: "Volver a SQL" },
+    proyecto: { url: "/proyecto", texto: "Volver a Proyecto" },
+};
+
+const volver = rutasVolver[categoria];
 ---
 
 <Layout>
+    <AppHeader />
 
-<AppHeader />
+    <section class="py-20 px-4 md:px-6">
+        <div
+            class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden border border-black-100"
+        >
+            <div class="p-6 md:p-10 lg:p-12">
+                <a
+                    href={volver.url}
+                    class="inline-flex items-center gap-1 text-yellow-600 mb-6 transition-colors group"
+                >
+                    <span class="text-lg">←</span>
+                    <span>{volver.texto}</span>
+                </a>
 
-<section class="mb-30 p-3">
-    <div class="max-w-3xl mx-auto p-3 bg-white flex flex-col gap-7 border-3 mt-10">
-        <Image src={frontmatter.image.url} alt="Head" width={100} height={100} class="w-full border-2" />
-        <h1 class="title text-4xl font-black">{frontmatter.title}</h1>
-
-        <div class="flex flex-col">
-            <div class="flex border-t border-b border-gray-100 mb-5 py-4">
-                <div class="flex-1 flex gap-6">
-                    <a href="#" class={styleSheet.actions}><i class="ri-thumb-up-line text-xl"></i> {frontmatter.likes}</a>
-                    <a href="#" class={styleSheet.actions}><i class="ri-chat-1-line text-xl"></i> {frontmatter.comments}</a>
+                <div
+                    class="rounded-xl overflow-hidden border border-gray-200 mb-8"
+                >
+                    <Image
+                        src={frontmatter.image.url}
+                        alt="Head"
+                        width={100}
+                        height={100}
+                        class="w-full h-auto object-cover"
+                    />
                 </div>
-                <div class="flex gap-6">
-                    <a href="#" class={styleSheet.actions}><i class="ri-bookmark-line text-xl"></i> </a>
-                    <a href="#" class={styleSheet.actions}><i class="ri-share-forward-box-line text-xl"></i> </a>
+
+                <h1
+                    class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight"
+                >
+                    {frontmatter.title}
+                </h1>
+
+                <div
+                    class="flex flex-col md:flex-row md:items-center justify-between border-t border-b border-gray-100 py-4 mb-8 gap-4"
+                >
+                    <div class="flex gap-6">
+                        <a href="#" class={styleSheet.actions}>
+                            <i class="ri-thumb-up-line text-xl"></i>
+                            <span>{frontmatter.likes}</span>
+                        </a>
+                        <a href="#" class={styleSheet.actions}>
+                            <i class="ri-chat-1-line text-xl"></i>
+                            <span>{frontmatter.comments}</span>
+                        </a>
+                    </div>
+                    <div class="flex gap-6">
+                        <a href="#" class={styleSheet.actions}>
+                            <i class="ri-bookmark-line text-xl"></i>
+                        </a>
+                        <a href="#" class={styleSheet.actions}>
+                            <i class="ri-share-forward-box-line text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="prose prose-lg max-w-none">
+                    <slot />
                 </div>
             </div>
-        <slot />
-    </div>
-</section>
+        </div>
+    </section>
 
-<CallToAction />
-<AppFooter />
-
+    <CallToAction />
+    <AppFooter />
 </Layout>

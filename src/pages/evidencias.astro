@@ -1,50 +1,87 @@
 ---
 import "../styles/global.css";
 import Layout from "../layouts/Layout.astro";
-
 import AppHeader from "../components/Header.astro";
 import AppFooter from "../components/Footer.astro";
-const allPosts = Object.values(
-  import.meta.glob("./posts/*.md", { eager: true }),
-);
+import svgUnderline from "../assets/underline.svg";
+import arrowCard from "../assets/arrow-card.svg";
+
+const categorias = [
+  {
+    nombre: "Modelado",
+    url: "/modelado",
+    image:
+      "https://i.pinimg.com/1200x/8e/cc/8c/8ecc8cf4239853b59e9a52afa95d86ad.jpg",
+    descripcion:
+      "El modelado de datos es el proceso de crear una representación visual de todo un sistema de información para comunicar conexiones entre puntos de datos y estructuras",
+  },
+  {
+    nombre: "Normalización",
+    url: "/normalizacion",
+    image: "https://blog.invgate.com/hubfs/normalizacion-de-base-de-datos.png",
+    descripcion:
+      "La normalización de bases de datos es un proceso de diseño de bases de datos que organiza los datos en estructuras de tablas específicas.",
+  },
+  {
+    nombre: "Lenguaje de consulta estructurado (SQL)",
+    url: "/sql",
+    image:
+      "https://i.pinimg.com/736x/14/20/fd/1420fdb2c1b84a55bc9a61e3050b0fa5.jpg",
+    descripcion:
+      "El lenguaje de consulta estructurado (SQL) es un lenguaje de programación estandarizado y específico de dominio que se emplea para interactuar RDBMS",
+  },
+  {
+    nombre: "Proyecto",
+    url: "/proyecto",
+    image:
+      "https://i.pinimg.com/736x/93/83/59/938359e19ab1532ba2b52e8e3d4820e3.jpg",
+    descripcion: "Proyecto final integrador...",
+  },
+];
 ---
 
 <Layout>
   <AppHeader />
+  <section class="py-25 space-y-10 px-5" id="evidencias">
+    <div class="max-w-md mx-auto relative">
+      <h1 class="text-4xl font-medium text-center">Evidencias</h1>
+      <img
+        src={svgUnderline.src}
+        alt="underline"
+        width="140"
+        class="absolute left-45 -bottom-1"
+      />
+    </div>
 
-  <section class="py-40">
-    <div class="max-w-3xl mx-auto">
-      <div class="text-center mb-15">
-        <h1 class="title text-5xl font-black">Evidencias</h1>
-      </div>
-      <div class="p-3">
-        {
-          allPosts.map(({ url, frontmatter, rawContent }: any) => (
-            <a
-              href={url}
-              class="flex gap-3 items-center bg-white p-5 border-2 mb-5 transition-all duration-200 hover:shadow-[4px_4px_0px_rgba(0,0,0,0.3)]"
-            >
-              <div>
-                <div class="w-[200px] h-[130px] overflow-hidden border-2">
-                  <img
-                    src={frontmatter?.image?.url}
-                    alt=""
-                    class="w-full h-full object-cover"
-                  />
-                </div>
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+      {
+        categorias.map((item) => (
+          <a
+            href={item.url}
+            class="flex flex-col bg-white p-5 group relative transition-all duration-200 hover:shadow-[4px_4px_0px_rgba(0,0,0,0.3)] border-2 border-black"
+          >
+            <div class="w-full h-[200px] overflow-hidden border-2">
+              <img
+                src={item.image}
+                alt={item.nombre}
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="space-y-1 pt-4">
+              <div class="flex pr-2">
+                <h2 class="text-xl font-medium flex-1 line-clamp-2">
+                  {item.nombre}
+                </h2>
+                <img src={arrowCard.src} alt="arrow" width="25" />
               </div>
-              <div class="flex flex-col gap-2">
-                <h1 class="line-clamp-2 text-xl font-bold">
-                  {frontmatter.title}
-                </h1>
-                <div class="line-clamp-2" set:html={rawContent} />
-              </div>
-            </a>
-          ))
-        }
-      </div>
+              <p class="line-clamp-3 text-sm text-gray-600">
+                {item.descripcion}
+              </p>
+            </div>
+          </a>
+        ))
+      }
     </div>
   </section>
-
   <AppFooter />
 </Layout>
