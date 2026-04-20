@@ -1,6 +1,6 @@
 ---
 layout: ../../components/MarkdownPost.astro
-title: "Taller MERE 4"
+title: "Reducción a tablas"
 categoria: "modelado"
 author: 
   name: "Isabella"

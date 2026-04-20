@@ -40,7 +40,30 @@ respectiva y documente todas las decisiones que se hagan acerca de restricciones
 correspondencia
 --
 ![Transporte](/Transporte.png)
-
+--
+***Bienes Raíces***
+--
+Una empresa de bienes raíces realiza un seguimiento de las casas en venta y de los clientes
+que buscan comprar casas. Una casa en venta puede estar listada con esta firma o con otra
+diferente. Estar “listado” con una firma significa que el dueño de la casa tiene un contrato
+con un agente que trabaja para esa firma. Un agente de bienes raíces de la empresa se
+caracteriza por tener un nombre (compuesto por Primer nombre, Segundo Nombre, Primer
+Apellido y Segundo Apellido), cédula de ciudadanía, género, fecha de nacimiento (sobre la
+cual se obtiene la edad), una cantidad de ventas realizadas en el último mes y un código de
+agente único. 
+--
+Cada casa en el mercado tiene precio, dirección, propietario y una lista de
+características, como el número de dormitorios, baños, tipo de calefacción,
+electrodomésticos, tamaño del garaje, etc. Esta lista puede ser diferente para diferentes
+casas, y algunas características pueden estar presentes en algunas casas, pero faltar en otras.
+Asimismo, cada cliente tiene preferencias que se expresan en los mismos términos (el
+número de dormitorios, baños, etc.). Aparte de estas preferencias, los clientes especifican el
+rango de precios de las casas que les interesan.
+Constrúyase un diagrama E-R. Indique cuáles son las entidades identificadas con los
+atributos, llaves primarias y llaves foráneas de cada una
+--
+![BienesRaices](/BienesRaices.png)
+--
 --
 ***Proveedor***
 --
@@ -75,7 +98,40 @@ menores de edad (menores a 18 años), por lo que deben tener patrocinadores que 
 responsables de pagar las multas (o reemplazar un libro en caso de pérdida)
 --
 ![Biblioteca](/Biblioteca2.png)
+--
+***Supermercado***
+--
+Una cadena de supermercados está interesada en construir un sistema de apoyo a la decisión
+con el que pueda analizar las ventas de diferentes productos en diferentes supermercados
+en diferentes momentos. Cada supermercado está ubicado en área geográfica: una ciudad,
+que está en un estado, que está en una región. El tiempo en el que realizó una o más ventas
+se puede medir en días, meses y años. Los productos tienen nombres y categorías
+(productos, productos enlatados, etc.). 
+--
+![Supermercado](/Supermercado.png)
+--
+***Banco***
+--
+Describa con sus propias palabras el contexto que describe el diagrama proveído,
+indicando claramente atributos, llaves primarias y llaves foráneas de cada una de
+las entidades allí descritas
+--
+![Banco](/Cliente.png)
+El diagrama de la imagen muestra como la entidad sucursal tiene los atributos ciudad, activo y 
+nombre la cual es el atributo clave; la entidad prestamos posee los atributos importe y el número 
+de préstamo el cual es el atributo clave; la entidad cliente posee la información general como ciudad, 
+calle, nombre, nombre y el atributo clave el id; la entidad empleado contiene nombre, numero de teléfono, 
+fecha de comienzo, id como el atributo clave, antigüedad como atributos derivados, nombre del subordinado 
+como atributo multivaluados; la entidad cuenta contiene saldo, número de cuenta como el atributo clave; 
+la entidad cuenta de ahorro contiene tipo de interés y la entidad cuenta corriente contiene 
+descubierto; la entidad débil pago contiene fecha de pago, importe pagado, y la clave parcial número de pago.
 
+La entidad sucursal se relaciona con el préstamo y a su vez el préstamo se relaciona con cliente 
+por medio del prestatario, la relación entre cliente y préstamo es prestar, además, cliente 
+se relaciona con empleado por medio de banquero y consejero, esta relación tiene como 
+atributo tipo; en empleado existen los roles de jefe y trabajador; cliente también está 
+relacionado con cuenta por medio de impositor, así mismo impositor tiene como atributo fecha 
+de acceso, cuenta es exclusiva de las entidades cuenta de ahorros y cuenta corriente.
 --
 ***Oficina***
 --
