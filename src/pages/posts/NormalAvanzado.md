@@ -20,15 +20,12 @@ Realizado por: Luna Calderon e Isabella Rodríguez
 ---
 
 <iframe 
-  src="/.pdf" 
+  src="/Taller_normalizacion_avanzada.pdf" 
   width="100%" 
   height="600px"
   style="border: none;"
 >
 </iframe>
-
-
-
 
 
 
