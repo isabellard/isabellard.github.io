@@ -38,7 +38,11 @@ https://github.com/isabellard/GeoquestFront
 https://github.com/isabellard/Geoquest
 ---
 
-
-<video width="100%" controls>
-  <source src="/Geoquest video.mp4" type="video/mp4">
-</video>
+<iframe
+  width="100%"
+  height="400"
+  src="https://www.youtube.com/embed/jly9moBITiU"
+  title="Geoquest video"
+  frameborder="0"
+  allowfullscreen>
+</iframe>
