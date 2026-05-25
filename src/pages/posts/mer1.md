@@ -78,3 +78,4 @@ Diseñe un modelo Entidad – Relación que cumpla con el
 mínimo de esta solicitud.
 --
 ![Plataforma](/Plataforma.png)
+

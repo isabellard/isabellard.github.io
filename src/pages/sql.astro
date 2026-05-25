@@ -28,7 +28,7 @@ const postsModelado = allPosts.filter(
       </div>
       <div class="p-3">
         {
-          postsModelado.map(({ url, frontmatter, rawContent }: any) => (
+          postsModelado.map(({ url, frontmatter }: any) => (
             <a
               href={url}
               class="flex gap-3 items-center bg-white p-5 border-2 mb-5 transition-all duration-200 hover:shadow-[4px_4px_0px_rgba(0,0,0,0.3)]"
@@ -46,7 +46,6 @@ const postsModelado = allPosts.filter(
                 <h1 class="line-clamp-2 text-xl font-bold">
                   {frontmatter.title}
                 </h1>
-                <div class="line-clamp-2" set:html={rawContent} />
               </div>
             </a>
           ))

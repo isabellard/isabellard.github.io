@@ -112,12 +112,12 @@ se puede medir en días, meses y años. Los productos tienen nombres y categorí
 --
 ***Banco***
 --
-Describa con sus propias palabras el contexto que describe el diagrama proveído,
+Describa con sus propias palabras el contexto que describe el modelo proveído,
 indicando claramente atributos, llaves primarias y llaves foráneas de cada una de
 las entidades allí descritas
 --
 ![Banco](/Cliente.png)
-El diagrama de la imagen muestra como la entidad sucursal tiene los atributos ciudad, activo y 
+El modelo de la imagen muestra como la entidad sucursal tiene los atributos ciudad, activo y 
 nombre la cual es el atributo clave; la entidad prestamos posee los atributos importe y el número 
 de préstamo el cual es el atributo clave; la entidad cliente posee la información general como ciudad, 
 calle, nombre, nombre y el atributo clave el id; la entidad empleado contiene nombre, numero de teléfono, 
